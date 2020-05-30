@@ -1,11 +1,11 @@
 # algorithm_coding_tip
 
 
-##Making priority queue
-###Asssign
+## Making priority queue
+### Asssign
 priority_queue<pair<int,int> , vector<pair<int,int> >,cmp> pq;
 
-###Make cmp
+### Make cmp
 struct cmp {
 	bool operator()(pair<int,int> a, pair<int,int> b) {
 		if(a.first>b.first) return true;
@@ -16,6 +16,6 @@ struct cmp {
 	}
 };
 
-###USE
+### USE
 pq.push();
 pq.pop();
